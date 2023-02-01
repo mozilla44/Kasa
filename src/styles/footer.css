@@ -2,7 +2,8 @@
     border: 3px solid black;
     height: 5em;
     width: 100vw;
-    position: fixed;
+    position: relative;
+    overflow: auto;
     flex-direction: column;
     bottom:0em;
     background-color:black;
