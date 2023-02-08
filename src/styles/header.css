@@ -2,6 +2,8 @@
     /* border: 3px solid green; */
     display: flex;
     justify-content: space-between;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .header_logo {

@@ -15,8 +15,8 @@ function Gallery() {
     <div className="gallery_wrapper">
       {Data.length > 0 && Data.map(logement => 
         <div className="gallery_card">
-          <h1>{logement.title}</h1>
           <img src={logement.cover} className="gallery_img"></img>
+          <h1 className="card_title">{logement.title}</h1>
         </div>
       )}
     </div>
