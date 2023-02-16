@@ -1,0 +1,45 @@
+.logement_slideshow {
+    background-color: black;
+    width: 95%;
+    height: 10em;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 1em;
+}
+
+.logmement_presentation {
+    border: 3px solid green;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement_tags {
+    border: 3px solid yellow;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logement_tag {
+    border: 3px solid red;
+    width: 7em;
+}
+
+.flat_info {
+    border: 3px solid salmon;
+   width: 40%;
+   margin-left: 1em;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   color: #FF6060;
+
+}
+
+.owner_info {
+    border: 3px solid blue;
+    width: 15%;
+}
+

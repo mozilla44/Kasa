@@ -1,7 +1,7 @@
 import '../styles/banner.css'
 import banner_img from '../assets/banner.png'
 
-function Header() {
+function Banner() {
     return(
         <div className='banner'>
         <img src={banner_img} alt="logo" className='banner_img'></img>
@@ -11,4 +11,4 @@ function Header() {
    
 )}
 
-export default Header
+export default Banner

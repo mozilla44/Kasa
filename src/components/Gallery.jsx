@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import "../styles/gallery.css";
+import Banner from "./Banner";
+import Card from "./Card";
+
+
 
 
 function Gallery() {
@@ -12,13 +16,13 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="gallery_wrapper">
+    <div>
+      <Banner/>
+      <div className="gallery_wrapper">
       {Data.length > 0 && Data.map(logement => 
-        <div className="gallery_card">
-          <img src={logement.cover} className="gallery_img"></img>
-          <h1 className="card_title">{logement.title}</h1>
-        </div>
+       <Card key={"logement-"+ logement.id} logement ={logement}/>
       )}
+      </div>
     </div>
   );
 }
