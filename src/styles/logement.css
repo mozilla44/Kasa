@@ -43,3 +43,6 @@
     width: 15%;
 }
 
+.logement_wrapper {
+    flex-grow: 1;
+}

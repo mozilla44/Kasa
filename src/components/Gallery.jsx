@@ -4,8 +4,6 @@ import Banner from "./Banner";
 import Card from "./Card";
 
 
-
-
 function Gallery() {
   const [Data, setData] = useState([]);
   useEffect(() => {

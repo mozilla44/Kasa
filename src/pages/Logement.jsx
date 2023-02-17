@@ -1,21 +1,28 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useNavigation, useParams } from "react-router-dom";
 import Collapse from "../components/Collapse";
-import Collapse2 from "../components/Collapse2";
+
 import "./../styles/logement.css";
 import "./../styles/collapse.css";
 
 function Logement() {
+  let navigate = useNavigate ()
   let { id } = useParams();
-  const [logement, setLogement] = useState({});
+  const [logement, setLogement] = useState({host:{}, tags:[]});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
       .then((data) => {
         let result = data.find((l) => l.id == id);
-        setLogement(result);
+        if (result){
+          setLogement(result);
+        }
+        else {
+          navigate("/error")
+        }
+        
       })
-      .catch((error) => console.log(error));
+      .catch((error) => navigate("/error") );
   }, []);
 
   return (
@@ -26,22 +33,20 @@ function Logement() {
           <h2>{logement.title}</h2>
           <h3>{logement.location}</h3>
           <div className="logement_tags">
-            {/* <div>{logement.tags}</div> */}
-            <div className="logement_tag">tag</div>
-            <div className="logement_tag">tag </div>
-            <div className="logement_tag">tag </div>
+            {logement.tags.map(tag => <div className="logement_tag">{tag}</div>)}
+           
           </div>
         </div>
         <div className="owner_info">
-          <h2>{/* {logement.host.name} */}name</h2>
+          <h2>{logement.host.name}name</h2>
           <img src="https://place-hold.it/50"></img>
           <div>owner stars</div>
         </div>
       </div>
 
       <div className="logment_collapse">
-        <div className="collapse_description"><Collapse/></div>
-        <div className="collapse_equipement"><Collapse2/></div>
+        <div className="collapse_description"><Collapse title={"Description"} description={logement.description}/></div>
+        <div className="collapse_equipement"><Collapse title={"Equipement"} description={logement.equipments}/></div>
       </div>
     </div>
   );
