@@ -9,7 +9,7 @@ function Logement() {
   let navigate = useNavigate ()
   let { id } = useParams();
   
-  const [logement, setLogement] = useState({host:{}, tags:[] ,equipements:[]});
+  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[]});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
@@ -46,7 +46,7 @@ function Logement() {
 
       <div className="logment_collapse">
         <div className="collapse_description"><Collapse title={"Description"} description={logement.description}/></div>
-        <div className="collapse_equipement"><Collapse title={"Equipement"} description={logement.equipments}/></div>
+        <div className="collapse_equipement"><Collapse title={"Equipement"} description={logement.equipments.map(equipment => <div className="logement_equipment">{equipment}</div>)}/></div>
       </div>
     </div>
   );
