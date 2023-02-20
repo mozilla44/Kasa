@@ -3,8 +3,6 @@ import { useState} from "react"
 
 function Collapse ({title , description}){
     
-   
-  
     const [open, setOpen] = useState(false)
     return (
         <div className="collapse">

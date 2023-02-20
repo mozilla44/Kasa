@@ -8,7 +8,8 @@ import "./../styles/collapse.css";
 function Logement() {
   let navigate = useNavigate ()
   let { id } = useParams();
-  const [logement, setLogement] = useState({host:{}, tags:[]});
+  
+  const [logement, setLogement] = useState({host:{}, tags:[] ,equipements:[]});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
@@ -34,11 +35,10 @@ function Logement() {
           <h3>{logement.location}</h3>
           <div className="logement_tags">
             {logement.tags.map(tag => <div className="logement_tag">{tag}</div>)}
-           
           </div>
         </div>
         <div className="owner_info">
-          <h2>{logement.host.name}name</h2>
+          <h2>{logement.host.name}</h2>
           <img src="https://place-hold.it/50"></img>
           <div>owner stars</div>
         </div>
