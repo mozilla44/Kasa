@@ -12,8 +12,6 @@
     object-fit: cover;
     height: 180px;
     border-radius: 1.875em;
-    
-    
 }
 
 .banner_txt {
@@ -25,8 +23,10 @@
     left: 25%;
     right: 25%;
     font-weight: 500;
-   
     
-    
+}
+
+.banner_txt-hidden {
+    display: none;
 }
 
