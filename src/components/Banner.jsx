@@ -1,11 +1,13 @@
 import '../styles/banner.css'
-import banner_img from '../assets/banner.png'
 
-function Banner() {
+/* chargemenr dynamic */
+/* charger avec url  */
+/*  */
+function Banner({imgSrc, bannerText}) {
     return(
         <div className='banner'>
-        <img src={banner_img} alt="logo" className='banner_img'></img>
-        <h1 className='banner_txt'>Chez vous, partout et ailleurs</h1>
+        <img src={imgSrc} alt="logo" className='banner_img'></img>
+        <h1 h1 className='banner_txt'>{bannerText}</h1>
         </div>
       
    

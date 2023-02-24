@@ -48,8 +48,13 @@
   /* border: 3px solid black; */
   width: 95%;
   margin: auto;
+  text-align: left;
 }
 
 .chevron {
   border: 3px solid red;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
 }

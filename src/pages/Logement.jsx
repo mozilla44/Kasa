@@ -11,7 +11,7 @@ function Logement() {
   let navigate = useNavigate ()
   let { id } = useParams();
   
-  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], stars:[]});
+  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], rating:3});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
@@ -26,7 +26,12 @@ function Logement() {
         
       })
       .catch((error) => navigate("/error") );
-  }, []);
+  }, [setLogement]);
+
+  function displayEquipments (){
+    
+    return (logement.equipments.map(equipment => <div className="logement_equipment">{equipment}</div>))
+  }
 
   return (
     <div className="logement_wrapper">
@@ -44,14 +49,14 @@ function Logement() {
           <h2 className="host-name">{logement.host.name}</h2>
           <img className="profile_pic" src={logement.host.picture}></img>
           </div>
-          <div className="owner-stars">{logement.rating}</div>
+          <div className="owner-stars"><Ratings starNumber={parseInt(logement.rating)}/></div>
         </div>
       </div>
 
 
       <div className="logment_collapse">
         <div className="collapse_description"><Collapse title={"Description"} description={logement.description}/></div>
-        <div className="collapse_equipement"><Collapse title={"Equipement"} description={logement.equipments.map(equipment => <div className="logement_equipment">{equipment}</div>)}/></div>
+        <div className="collapse_equipement"><Collapse title={"Equipement"} description={displayEquipments()}/></div>
       </div>
     </div>
   );

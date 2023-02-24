@@ -15,7 +15,7 @@ function Gallery() {
 
   return (
     <div>
-      <Banner/>
+      <Banner bannerText={""} imgSrc={"/assets/banner.png"}/>
       <div className="gallery_wrapper">
       {Data.length > 0 && Data.map(logement => 
        <Card key={"logement-"+ logement.id} logement ={logement}/>
