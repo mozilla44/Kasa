@@ -2,8 +2,10 @@
     /* border: 3px solid red; */
     border-radius: 1.875em;
     position: relative;
+    min-width: 95%;
     max-width: 95%;
     margin: auto;
+    margin-bottom :em ;
 }
 
 .banner_img {
