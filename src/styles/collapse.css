@@ -41,6 +41,7 @@
   padding: 0 0.8em 0 0.8em;
   background-color: #ff6060;
   border-radius: 10px;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -52,7 +53,8 @@
 }
 
 .chevron {
-  border: 3px solid red;
+  transition-duration: 0.3s;
+  font-weight: 700px;
 }
 
 .chevron.open {

@@ -35,7 +35,7 @@ function Logement() {
 
   return (
     <div className="logement_wrapper">
-      <Slideshow/>
+      {/* <Slideshow/> */}
       <div className="logmement_presentation">
         <div className="flat_info">
           <h2 className="logement-title">{logement.title}</h2>

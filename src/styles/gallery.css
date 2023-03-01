@@ -8,19 +8,16 @@
     margin: auto;
     margin-top: 1.5em;
     padding-top: 2em;
-   
 }
 
 .gallery_card {
-
 height:20em;
 width:30%;
-/* border: 3px solid green; */
+border: 3px solid green;
 margin: auto; 
 margin-bottom: 2em;
 border-radius: 15px;
 position: relative;
-    
 }
 
 .gallery_img{
@@ -35,10 +32,10 @@ position: relative;
     /* border: 1px solid yellow; */
     font-size: large;
     position: absolute;
-    bottom: 0em;
+    bottom: 1.5em;
     left: 0.5em;
     color: white;
-    width: 14em;
+    max-width: 14em;
     height: 2em;
     text-align: left;
 }
