@@ -1,4 +1,4 @@
-import "./../styles/about.css";
+import "./../styles/css/about.css";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 

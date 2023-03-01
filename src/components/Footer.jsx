@@ -1,4 +1,4 @@
- import '../styles/footer.css';
+ import '../styles/css/footer.css';
  import logo from '../assets/footer_logo.svg';
 
 

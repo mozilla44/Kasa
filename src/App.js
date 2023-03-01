@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./styles/css/index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";

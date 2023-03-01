@@ -4,8 +4,8 @@ import Collapse from "../components/Collapse";
 import Slideshow from "../components/Slideshow";
 import Ratings from "../components/Ratings";
 
-import "./../styles/logement.css";
-import "./../styles/collapse.css";
+import "./../styles/css/logement.css";
+import "./../styles/css/collapse.css";
 
 function Logement() {
   let navigate = useNavigate ()

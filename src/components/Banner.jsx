@@ -1,4 +1,4 @@
-import '../styles/banner.css'
+import '../styles/css/banner.css'
 
 /* chargemenr dynamic */
 /* charger avec url  */
