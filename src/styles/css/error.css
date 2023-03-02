@@ -1,5 +1,4 @@
 .error_wrapper {
-  /* border: 3px solid red; */
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -10,27 +9,44 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid red;
+  height: 100%;
 }
-
-.error-code {
-  /* border: 3px solid green; */
+.error_wrapper .error-code {
   font-size: 288px;
   font-family: "Montserrat", sans-serif;
   min-height: 100%;
   margin: 0;
-  color: #FF6060;
+  color: #ff6060;
   line-height: 0.9em;
 }
-
-.error-message {
-  /* border: 3px solid blue; */
-  font-size: 36px;
-  color: #FF6060;
+@media (max-width: 770px) {
+  .error_wrapper .error-code {
+    font-size: 5.5em;
+  }
 }
-
-.return-home {
+.error_wrapper .error-message {
+  font-size: 2.25em;
+  color: #ff6060;
+}
+@media (max-width: 770px) {
+  .error_wrapper .error-message {
+    font-size: 1.2em;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
+.error_wrapper .return-home {
   cursor: pointer;
-  /* border: 3px solid yellow; */
   margin-top: 2em;
-  color: #FF6060;
+  color: #ff6060;
+}
+@media (max-width: 770px) {
+  .error_wrapper .return-home {
+    margin-bottom: 1em;
+  }
 }

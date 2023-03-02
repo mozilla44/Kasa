@@ -1,29 +1,39 @@
+@import "../sass/mixins.scss";
+
 .error_wrapper {
-    /* border: 3px solid red; */
-    flex-grow: 1; 
-    display: flex;
-    flex-direction: column;
-}
-
-
-.error-code {
-    /* border: 3px solid green; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid red;
+  height: 100%;
+  .error-code {
     font-size: 288px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     min-height: 100%;
     margin: 0;
-    color: #FF6060;
+    color: #ff6060;
     line-height: 0.9em;
-}
-
-.error-message {
-    /* border: 3px solid blue; */
-    font-size: 36px;
-    color: #FF6060;
-}
-.return-home {
+    @include mobile {
+      font-size: 5.5em;
+    }
+  }
+  .error-message {
+    font-size: 2.25em;
+    color: #ff6060;
+    @include mobile {
+      font-size: 1.2em;
+      width: 70%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  .return-home {
     cursor: pointer;
-    /* border: 3px solid yellow; */
     margin-top: 2em;
-    color: #FF6060;
+    color: #ff6060;
+    @include mobile {
+      margin-bottom: 1em;
+    }
+  }
 }

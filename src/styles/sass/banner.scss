@@ -8,8 +8,7 @@
   margin: auto;
   text-align: center;
   @include mobile {
-    height: 12vh;    
-    border: 3px solid red;
+    height: 12vh;
     border-radius: 10px;
   }
   .banner_img {
@@ -17,11 +16,12 @@
     object-fit: cover;
     height: 180px;
     border-radius: 1.875em;
+    filter: brightness(80%);
     @include mobile {
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 10px;    
-      }
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+    }
   }
   .banner_txt {
     color: white;
@@ -31,17 +31,18 @@
     right: 25%;
     font-weight: 500;
     @include mobile {
-        color: blue;
-        margin: 0;
-        font-size:  1.5em;
-        width: 70%;
-        left: 0;
-        top: 10%;
-        border: 3px solid red;
-        
+      display: flex;
+      color: white;
+      margin: auto;
+      font-size: 1.5em;
+      text-align: left;
+      left: 0.5em;
+      top: 10%;
+      
     }
   }
   .banner_txt-hidden {
     display: none;
   }
 }
+
