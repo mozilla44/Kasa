@@ -1,36 +1,47 @@
 @import "../sass/mixins.scss";
 
 .banner {
-    /* border: 3px solid red; */
-    border-radius: 1.875em;
-    position: relative;
-    min-width: 95%;
-    max-width: 95%;
-    margin: auto;
-    text-align: center;
-    
-}
-
-.banner_img {
-    /* border: 3px solid yellow;  */
+  border-radius: 1.875em;
+  position: relative;
+  min-width: 95%;
+  max-width: 95%;
+  margin: auto;
+  text-align: center;
+  @include mobile {
+    height: 12vh;    
+    border: 3px solid red;
+    border-radius: 10px;
+  }
+  .banner_img {
     width: 99%;
     object-fit: cover;
     height: 180px;
     border-radius: 1.875em;
-}
-
-.banner_txt {
-    font-family: 'Montserrat', sans-serif;
+    @include mobile {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 10px;    
+      }
+  }
+  .banner_txt {
     color: white;
-    /* border: 3px solid yellow; */
     position: absolute;
     top: 33%;
     left: 25%;
     right: 25%;
     font-weight: 500;
-    
-}
-
- .banner_txt-hidden {
+    @include mobile {
+        color: blue;
+        margin: 0;
+        font-size:  1.5em;
+        width: 70%;
+        left: 0;
+        top: 10%;
+        border: 3px solid red;
+        
+    }
+  }
+  .banner_txt-hidden {
     display: none;
+  }
 }
