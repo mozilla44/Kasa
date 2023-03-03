@@ -19,7 +19,6 @@
     font-size: 0.95em;
   }
   .flat_info {
-    /* border: 3px solid salmon; */
     width: 40%;
     margin-left: 1em;
     display: flex;
@@ -32,7 +31,6 @@
   .owner_info {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     width: 30%;
   }
   .logement_wrapper {
@@ -63,8 +61,11 @@
     justify-content: flex-end;
   }
   .owner-stars {
-    border: 3px solid red;
     width: 10em;
     margin: auto;
   }
+}
+.logement_wrapper{
+  max-width: 94%;
+  margin: auto;
 }
