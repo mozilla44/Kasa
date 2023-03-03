@@ -28,7 +28,6 @@
   font-size: 0.95em;
 }
 .logmement_presentation .flat_info {
-  /* border: 3px solid salmon; */
   width: 40%;
   margin-left: 1em;
   display: -webkit-box;
@@ -55,7 +54,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* justify-content: center; */
   width: 30%;
 }
 .logmement_presentation .logement_wrapper {
@@ -95,7 +93,11 @@
           justify-content: flex-end;
 }
 .logmement_presentation .owner-stars {
-  border: 3px solid red;
   width: 10em;
+  margin: auto;
+}
+
+.logement_wrapper {
+  max-width: 94%;
   margin: auto;
 }
