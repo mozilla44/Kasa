@@ -1,19 +1,22 @@
 @import "../sass/mixins.scss";
-
+.body{
+  min-height: 100vh;
+}
 .error_wrapper {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   border: 3px solid red;
-  height: 100%;
   .error-code {
     font-size: 288px;
-    font-family: "Montserrat", sans-serif;
     min-height: 100%;
-    margin: 0;
+    /*  margin: 0; */
     color: #ff6060;
     line-height: 0.9em;
+    @include desktop {
+      margin: 0;
+    }
     @include mobile {
       font-size: 5.5em;
     }

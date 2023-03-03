@@ -11,7 +11,7 @@ function Logement() {
   let navigate = useNavigate ()
   let { id } = useParams();
   
-  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], rating:3});
+  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], rating:[]});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
@@ -26,7 +26,7 @@ function Logement() {
         
       })
       .catch((error) => navigate("/error") );
-  }, [setLogement]);
+  }, [ setLogement ,id ,navigate ]);
 
   function displayEquipments (){
     
@@ -35,13 +35,13 @@ function Logement() {
 
   return (
     <div className="logement_wrapper">
-      {/* <Slideshow/> */}
+      <Slideshow/>
       <div className="logmement_presentation">
         <div className="flat_info">
           <h2 className="logement-title">{logement.title}</h2>
           <h3 className="logement-location">{logement.location}</h3>
           <div className="logement_tags">
-            {logement.tags.map(tag => <div className="logement_tag">{tag}</div>)}
+            {Object.entries(logement.tags).map(([k ,tag]) => <div key={"tag-" + k} className="logement_tag">{tag}</div>)}
           </div>
         </div>
         <div className="owner_info">

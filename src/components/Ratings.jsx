@@ -20,7 +20,7 @@ let [number, setNumber ] = useState([0,0,0,0,0].fill(1,0,props.starNumber).fill(
 
 return (
   <div>
-  {number.map(i => <i className={`fa-solid fa-star ${i === 1? "red" : "grey"}`}></i>)}
+  {Object.entries(number).map(([k,i]) => <i key={"star-" + k} className={`fa-solid fa-star ${i === 1? "red" : "grey"}`}></i>)}
   </div>
 )
 

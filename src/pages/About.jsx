@@ -1,6 +1,7 @@
 import "./../styles/css/about.css";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
+import "./../styles/css/footer.css"
 
 function About() {
   return (

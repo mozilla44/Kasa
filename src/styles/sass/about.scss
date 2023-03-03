@@ -1,17 +1,15 @@
 .about-wrapper {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid red;
+  .about {
     margin: 0.5em;
-}
-
-.about-collapse-wrapper{
+  }
+  .about-collapse-wrapper {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -20,9 +18,8 @@
     width: 100%;
     margin-top: 1em;
     margin-bottom: 2em;
-
-}
-
-.collapse_description.about{
-    width: 80%;
+    .about {
+      width: 80%;
+    }
+  }
 }
