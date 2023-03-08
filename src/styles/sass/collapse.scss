@@ -1,3 +1,5 @@
+@import "../sass/mixins.scss";
+
 .logment_collapse {
   display: flex;
   margin: auto;
@@ -9,13 +11,18 @@
 .collapse {
   border-radius: 10px;
   background-color: #f7f7f7;
+  @include mobile {
+    width: 100%;
+  }
 }
-.collapse_description {
+.collapse_description , .collapse_equipement{
   width: 45%;
+  @include mobile {
+    width: 100%;
+    margin: 0.5em 0 0.5em 0;
+  }
 }
-.collapse_equipement {
-  width: 45%;
-}
+
 .content {
   border-radius: 10px;
   height: 10em;

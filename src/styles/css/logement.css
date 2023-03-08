@@ -168,7 +168,6 @@
     margin-right: 0.2em;
     height: 100%;
     text-align: center;
-    border: 3px solid;
     width: 50%;
   }
 }
@@ -216,7 +215,6 @@
 }
 @media (max-width: 770px) {
   .logement_wrapper .logment_collapse {
-    border: 3px solid;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

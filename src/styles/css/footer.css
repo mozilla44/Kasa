@@ -1,7 +1,6 @@
 .footer {
-  border: 3px solid black;
   height: 5em;
-  width: 100vw;
+  width: 100%;
   overflow: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
