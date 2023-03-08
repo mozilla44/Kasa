@@ -20,6 +20,7 @@ function Gallery() {
       {Data.length > 0 && Data.map(logement => 
        <Card key={"logement-"+ logement.id} logement ={logement}/>
       )}
+      <div className="gallery_card empty-card"></div>
       </div>
     </div>
   );

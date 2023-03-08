@@ -10,9 +10,9 @@ function ChangeSlide (){
 }
   return (
         <div className="slider">
-        <img src="https://place-hold.it/1000x500" alt="slideshow" className="slide"></img>
-        <div className="precedent" onClick={()=>ChangeSlide(-1)}></div>
-        <div className="suivant" onClick={()=>ChangeSlide(1)}></div>
+        <img src="https://place-hold.it/100x100" alt="slideshow" className="slider-img"></img>
+        {/* <div className="precedent" onClick={()=>ChangeSlide(-1)}></div> */}
+        {/* <div className="suivant" onClick={()=>ChangeSlide(1)}></div> */}
     </div>
 )}
 
