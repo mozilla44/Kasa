@@ -11,11 +11,6 @@
 .collapse {
   border-radius: 10px;
   background-color: #f7f7f7;
-  @include mobile {
-    width: 100%;
-  }
-}
-.collapse_description , .collapse_equipement{
   width: 45%;
   @include mobile {
     width: 100%;
@@ -23,12 +18,15 @@
   }
 }
 
-.content {
+.collapse-content {
   border-radius: 10px;
-  height: 10em;
+  min-height: 10em;
   display: flex;
   align-items: center;
   color: #ff6060;
+  @include mobile {
+    padding: 1em 0 1em 0;
+  }
 }
 .collapse-title {
   color: white;
