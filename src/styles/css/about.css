@@ -28,6 +28,7 @@
 }
 .about-wrapper .about {
   margin: 0.5em;
+  border: 3px solid;
 }
 .about-wrapper .about-collapse-wrapper {
   display: -webkit-box;
@@ -53,11 +54,12 @@
     margin-top: 0;
   }
 }
-.about-wrapper .about-collapse-wrapper .about {
+.about-wrapper .about-collapse-wrapper .about-collapse {
   width: 80%;
+  margin: 0.5em 0 0.5em 0;
 }
 @media (max-width: 770px) {
-  .about-wrapper .about-collapse-wrapper .about {
+  .about-wrapper .about-collapse-wrapper .about-collapse {
     width: 90%;
   }
 }

@@ -14,24 +14,16 @@
 .collapse {
   border-radius: 10px;
   background-color: #f7f7f7;
-}
-@media (max-width: 770px) {
-  .collapse {
-    width: 100%;
-  }
-}
-
-.collapse_description, .collapse_equipement {
   width: 45%;
 }
 @media (max-width: 770px) {
-  .collapse_description, .collapse_equipement {
+  .collapse {
     width: 100%;
     margin: 0.5em 0 0.5em 0;
   }
 }
 
-.content {
+.collapse-content {
   border-radius: 10px;
   min-height: 10em;
   display: -webkit-box;
@@ -43,7 +35,7 @@
   color: #ff6060;
 }
 @media (max-width: 770px) {
-  .content {
+  .collapse-content {
     padding: 1em 0 1em 0;
   }
 }
