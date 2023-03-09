@@ -1,5 +1,5 @@
 @import "../sass/mixins.scss";
-.body{
+.body {
   min-height: 100vh;
 }
 .error_wrapper {
@@ -7,11 +7,13 @@
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  border: 3px solid red;
+  justify-content: center;
+  @include mobile {
+    justify-content: center;
+  }
   .error-code {
     font-size: 288px;
     min-height: 100%;
-    /*  margin: 0; */
     color: #ff6060;
     line-height: 0.9em;
     @include desktop {
@@ -19,6 +21,7 @@
     }
     @include mobile {
       font-size: 5.5em;
+      margin: 0;
     }
   }
   .error-message {
@@ -29,6 +32,7 @@
       width: 70%;
       margin: auto;
       text-align: center;
+      margin: 0;
     }
   }
   .return-home {

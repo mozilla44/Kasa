@@ -16,12 +16,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 770px) {
+  .error_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .error_wrapper .error-code {
   font-size: 288px;
   min-height: 100%;
-  /*  margin: 0; */
   color: #ff6060;
   line-height: 0.9em;
 }
@@ -33,6 +41,7 @@
 @media (max-width: 770px) {
   .error_wrapper .error-code {
     font-size: 5.5em;
+    margin: 0;
   }
 }
 .error_wrapper .error-message {
@@ -45,6 +54,7 @@
     width: 70%;
     margin: auto;
     text-align: center;
+    margin: 0;
   }
 }
 .error_wrapper .return-home {
