@@ -3,9 +3,9 @@ import '../styles/css/banner.css'
 /* chargemenr dynamic */
 /* charger avec url  */
 /*  */
-function Banner({imgSrc, bannerText}) {
+function Banner({imgSrc, bannerText,extraClass}) {
     return(
-        <div className='banner'>
+        <div className={`banner ${extraClass}`}>
         <img src={imgSrc} alt="logo" className='banner_img'></img>
         <h1 h1 className='banner_txt'>{bannerText}</h1>
         </div>

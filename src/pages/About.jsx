@@ -6,7 +6,7 @@ import "./../styles/css/footer.css"
 function About() {
   return (
     <div className="about-wrapper">
-      <Banner imgSrc={"/assets/about_banner.png"} />
+      <Banner imgSrc={"/assets/about_banner.png"} extraClass="about-banner" />
       <div className="about-collapse-wrapper">
         <div className="collapse_description about">
           <Collapse
