@@ -25,10 +25,13 @@
 
 .content {
   border-radius: 10px;
-  height: 10em;
+  min-height: 10em;
   display: flex;
   align-items: center;
   color: #ff6060;
+  @include mobile {
+    padding: 1em 0 1em 0;
+  }
 }
 .collapse-title {
   color: white;
