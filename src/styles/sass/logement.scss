@@ -85,9 +85,11 @@
       .owner-profile {
         margin-top: 0;
         display: flex;
-        align-items: center;
-        justify-content: center;
+       justify-content: flex-end;
         width: 100%;
+        @include mobile {
+          align-items: center;
+        }
         .host-name {
           height: 1em;
           font-size: 1.3em;
@@ -106,7 +108,7 @@
           border-radius: 100%;
           width: 3.5em;
           height: 3.5em;
-          margin-right: 1em;
+         /*  margin-right: 1em; */
           @include mobile {
             height: 2.5em;
             width: 2.5em;
@@ -116,19 +118,18 @@
         }
       }
       .owner-stars {
-        width: 10em;
         margin: auto;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         @include mobile {
           justify-content: flex-start;
         }
-        .owner-star {
-          font-size: 1.2em;
-          margin: 0 0.1em 0 0.1em;
+        .fa-star {
+          font-size: 1.6em;
+          margin: 0 0.2em 0 0.2em;
           @include mobile {
-            font-size: 1em;
+            font-size: 1.2em;
             margin: 0;
           }
         }
