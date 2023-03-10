@@ -1,1 +1,31 @@
-
+.slideshow_wrapper {
+  width: 100%;
+  height: 25em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .slideshow_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .precedent,
+  .suivant {
+    color: white;
+    cursor: pointer;
+    /* transition: opacity 0.3s ease; */
+    /* opacity: 0; */
+    position: absolute;
+    font-size: 3em;
+    font-weight: 900;
+    padding: 10px;
+  }
+  .precedent {
+    left: 0;
+  }
+  .suivant {
+    right: 0;
+  }
+}
