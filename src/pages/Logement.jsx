@@ -11,7 +11,7 @@ function Logement() {
   let navigate = useNavigate ()
   let { id } = useParams();
   
-  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], rating:[]});
+  const [logement, setLogement] = useState({host:{}, tags:[] ,equipments:[], rating:[] , pictures:[]});
   useEffect(() => {
     fetch(`/logements.json`)
       .then((response) => response.json())
@@ -35,7 +35,7 @@ function Logement() {
 
   return (
     <div className="logement_wrapper">
-      <Slideshow/>
+      <Slideshow pictures={logement.pictures}/>
       <div className="logmement_presentation">
         <div className="flat_info">
           <h2 className="logement-title">{logement.title}</h2>
