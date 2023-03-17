@@ -1,7 +1,7 @@
 import { useState} from "react"
 
 
-function Collapse ({title , description,extraClass}){
+function Collapse ({title , description, extraClass}){
     
     const [open, setOpen] = useState(false)
     return (
