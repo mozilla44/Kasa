@@ -30,7 +30,7 @@ function Logement() {
 
   function displayEquipments (){
     
-    return (logement.equipments.map(equipment => <div className="logement_equipment">{equipment}</div>))
+    return (logement.equipments.map(equipment => <div className="logement_equipment" key={equipment}>{equipment}</div>))
   }
 
   return (
