@@ -20,7 +20,7 @@ function Slideshow({ pictures }) {
   const [img, setImg] = useState(pictures[0]);
   useEffect(() => {
     setImg(pictures[0]);
-  }, [setImg, pictures]); //pourqu
+  }, [setImg, pictures]); 
 
   function ChangeSlide(numero) {
     let index = pictures.findIndex((p) => p === img);
@@ -37,10 +37,10 @@ function Slideshow({ pictures }) {
     <div className="slideshow_wrapper">
       <img src={img} alt="" className="slideshow_img"></img>
       <div className="precedent" onClick={() => ChangeSlide(-1)}>
-        <i class="fa-solid fa-chevron-left"></i>
+        <i className="fa-solid fa-chevron-left"></i>
       </div>
       <div className="suivant" onClick={() => ChangeSlide(1)}>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i className="fa-solid fa-chevron-right"></i>
       </div>
     </div>
   );
