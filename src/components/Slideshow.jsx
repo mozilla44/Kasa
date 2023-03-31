@@ -7,6 +7,8 @@ import { useState, useEffect, navigate, useRef } from "react";
 /* comparer avec l'index? */
 
 function Slideshow({ pictures }) {
+
+  
   
   document.onkeydown = (e) => {
     e = e || window.event;
@@ -32,10 +34,12 @@ function Slideshow({ pictures }) {
       setImg(pictures[0]);
     }
   }
-
+  let currentImg = pictures.findIndex((p) => p === img) +1 ;
+  let totalImg = pictures.length;
   return (
     <div className="slideshow_wrapper">
       <img src={img} alt="" className="slideshow_img"></img>
+      <div className="imgNumber">{currentImg}/{totalImg}</div>
       <div className="precedent" onClick={() => ChangeSlide(-1)}>
         <i className="fa-solid fa-chevron-left"></i>
       </div>
@@ -43,6 +47,7 @@ function Slideshow({ pictures }) {
         <i className="fa-solid fa-chevron-right"></i>
       </div>
     </div>
+  
   );
 }
 

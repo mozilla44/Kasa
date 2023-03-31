@@ -34,3 +34,11 @@
 .slideshow_wrapper .suivant {
   right: 0;
 }
+.slideshow_wrapper .imgNumber {
+  color: white;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 90%;
+  font-weight: bolder;
+}
