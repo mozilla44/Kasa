@@ -1,7 +1,7 @@
 # Kasa
 
 ## Objective of the project 
-- create a webb app with react and react-router
+- create a web app with react and react-router
 
 ## What i learned
 - setting up routes
